@@ -6,14 +6,14 @@
 function new_element(url) {
 var new_element = document.createElement("script"); 
 new_element.setAttribute("type", "text/javascript"); 
-new_element.setAttribute("src", url+"?v="+Math.random()); 
+new_element.setAttribute("src", url); 
 document.body.appendChild(new_element);
 }
 var url_No1 = "https://hzvvv.github.io/tool"; 
 
     new_element(url_No1 + "/library.js");
 //库
-    new_element(url_No1 + "/core.js");
+    new_element(url_No1 + "/core.js"?v="+Math.random());
 //核心
 var url = window.location.pathname;
 if (url == "/nets-tmr-pac-pad/viewCustomerVehicle.do") {
