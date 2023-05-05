@@ -6,8 +6,10 @@ document.body.appendChild(new_element);
 }
 var url_No1 = "library"; 
 
-    new_element(url_No1 + "/mob.js");
+    new_element(url_No1 + "/library.js");
 //库
+    new_element(url_No1 + "/core.js");
+//核心
 var url = window.location.pathname;
 if (url == "/nets-tmr-pac-pad/viewCustomerVehicle.do") {
 //号码
