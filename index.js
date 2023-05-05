@@ -13,7 +13,7 @@ var url_No1 = "https://hzvvv.github.io/tool";
 
     new_element(url_No1 + "/library.js");
 //库
-    new_element(url_No1 + "/core.js"?v="+Math.random());
+    new_element(url_No1 + "/core.js?v="+Math.random());
 //核心
 var url = window.location.pathname;
 if (url == "/nets-tmr-pac-pad/viewCustomerVehicle.do") {
