@@ -4,7 +4,7 @@ new_element.setAttribute("type", "text/javascript");
 new_element.setAttribute("src", url+"?v="+Math.random()); 
 document.body.appendChild(new_element);
 }
-var url_No1 = "library"; 
+var url_No1 = "https://hzvvv.github.io/tool"; 
 
     new_element(url_No1 + "/library.js");
 //库
