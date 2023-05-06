@@ -9,7 +9,7 @@ layer.open({
     type: 1,
     area: ['220px', '300'], //宽高
     shade: 0,
-    title: ['疯狂周四-小工具', 'font-size:14px;background-color:#C6DAD0;text-align:center'],
+    title: ['疯狂周四 - 小工具', 'font-size:14px;background-color:#C6DAD0;text-align:center'],
     offset: 'r',
     skin: 'layui-layer-geIu',
     content: '<br><input type="text" style="border:1px solid #a1a1a1; border-radius:5px; padding: 10px;    width: 80%;  height: 30px;  background: #eee; text-align: center;" id="data_url" placeholder="输入手机号" size="19"></textarea> <br><br><select id="Change1" style="border:1px solid #a1a1a1; border-radius:5px; padding: 5px;    width: 80%;  height: 30px;  background: #eee; text-align: center;"  class="select_default"><option value="">请选择</option><option value="1">移动电话</option><option value="2">联系电话</option><option value="3">联系电话1</option></select> <br><br> <button style="border:1px solid #a1a1a1; border-radius:5px; padding: 0px; text-align: center; font-weight: normal;  background: #eee; height: 30px; width: 80%;text-align: center; min-width: 120px;" id="floce21">确认</button><br><br><br><br><p style=" padding: 10px;    width: 80%;  text-align: center;">© Powered by 疯狂周四</p >',
