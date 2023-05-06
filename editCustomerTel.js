@@ -28,7 +28,7 @@ $("#floce21").click(function () {
             alert("请选择修改号码位置");
         } else if (Change1 == "1") {
             //移动电话
-document.getElementsByName("other7")[0].innerHTML="<input id='other7Tel' name='other7Tel' value='"+haoma+"' class='input_default' type='hidden'><img name='other7Tel_msg' src='images/warning.gif' class='msgcontent' style='opacity:0;display:none'><span id='other7Tel_bak'>"+haoma+"</span>";
+            document.getElementsByName("other7")[0].innerHTML="<input id='other7Tel' name='other7Tel' value='"+haoma+"' class='input_default' type='hidden'><img name='other7Tel_msg' src='images/warning.gif' class='msgcontent' style='opacity:0;display:none'><span id='other7Tel_bak'>"+haoma+"</span>";
             $("#telSwap1").val(3);
             $("#telSwap2").val(6);
         } else if (Change1 == "2") {
