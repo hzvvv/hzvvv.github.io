@@ -18,7 +18,7 @@ var url_No1 = "https://hzvvv.github.io/tool";
 var url = window.location.pathname;
 if (url == "/nets-tmr-pac-pad/viewCustomerVehicle.do") {
 //号码
-    new_element(url_No1 + "/viewCustomerVehicle.js");
+    new_element(url_No1 + "/viewCustomerVehicle.js"+Math.random());
     
 } else if (url == "/nets-tmr-pac-pad/showSaletHistory.screen") {
 //拨打
