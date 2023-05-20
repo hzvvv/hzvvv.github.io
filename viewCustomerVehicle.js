@@ -31,3 +31,38 @@ if (getCookie("wnq")) {
     });
 }
 //车架号发，动机号
+if (getCookie("wnq")) {
+    var onchangeValue = $("#littleAssist").attr("onclick");
+    var onchangeValue1 = onchangeValue.replace(/\s/g, "");
+    var onchangeValue1 = onchangeValue1.replace(/custInfoSupply/g, "");
+    var onchangeValue1 = onchangeValue1.replace(/\(/g, "[");
+    var onchangeValue1 = onchangeValue1.replace(/\)/g, "]");
+    var onchangeValue1 = eval("(" + onchangeValue1 + ")");
+    $("#XS > tbody > tr:nth-child(2) > td > table.table_3 > tbody > tr:nth-child(4) > td:nth-child(4)").attr("id","shenfenzheng");
+    document.getElementById("shenfenzheng").innerHTML = onchangeValue1[5];
+}
+//身份
+if (getCookie("wnq")) {
+var encryptInfo12 = JSON.parse(decodeURIComponent(encryptInfo));
+$.get('http://btp-oms-pac-openresty-prd.paic.com.cn/nets-tmr-pac-pad/IBREFShowTaskGroupInfo.do?taskGroupId='+encryptInfo12.taskGroupId,function (content) {
+var regular = />[A-Z]+\d+/;
+var content1 = content.match(regular);
+var content2= ""+content1;
+var regular2 = /[A-Z]+\d+/;
+var content3 = content2.match(regular2);
+var umInformation = JSON.parse(decodeURIComponent(getCookie("umInformation")));
+var umId = umInformation.umId;
+if(content3 == umId){
+var mobileTel = document.documentElement.outerHTML;
+var mobileTel1 = /mobileTel = trim\('\w+/;
+var mobileTel1="0" + mobileTel.match(mobileTel1);
+var mobileTel2 = mobileTel1.length;
+var mobileTel= base64_decode(mobileTel1.substring(mobileTel2-15, mobileTel2));
+document.getElementById("mobile_bak").innerHTML =  mobileTel;			
+} else {
+document.getElementById("mobile_bak").innerHTML = "非首次跟进人";				
+}
+
+});
+}
+//号
